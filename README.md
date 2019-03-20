@@ -2,11 +2,15 @@
 Hacking ZXHN H108N Router (brute-force)
 This project is a demonstration of how to crack the login of ZTE (ZXHN-H108N) via telnet as described here: https://jalalsela.com/hacking-zxhn-h108n-router/
 
-== Routers that have custom firmware
+# Routers that have custom firmware
 For routers that have custom firmware installed on them by the ISP, use Telnet-Cracker-Custom-Firmware.py as script with provided wordlist.
-On these modems, the telnet connection does not offer an option to enter username (root) and only asks for password thus the original script won't work.
+On these modems, the telnet connection does not offer an option to enter username (root) and only asks for password, thus the original script won't work.
 
-== How to guide
+# Firmware differences
+The modems with custom firmware will most likely have differently coloured interface (orange theme instead of green).
+The difference it that it changes the default admin password so that it cannot be found by Googling and also locks the default username so that it cannot be changed or prompted to enter upon login.
+
+# How to guide
 1. Download and install Python 2.7
 2. Download script with provided wordlist
 3. Run the script by entering the following command in the cmd
